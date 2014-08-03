@@ -48,10 +48,10 @@ img {
 #score{
 	
 	
-	font-size: 5em;
+	font-size: 1.5em;
 }
 
-.scoreNombre{
+#resultat{
 	
 	font-weight: bold;
 	font-size: 130%;
