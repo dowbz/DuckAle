@@ -192,15 +192,15 @@ p{
 
 .size01{   /* 3 chiffres */
   font-size: 26px;
-  padding: 34% 0;	  
+/*  padding: 34% 0;*/	  
 }
 .size02{   /* 4 chiffres */ 
   font-size: 22px;
-  padding: 37% 0;	  
+/*  padding: 37% 0;*/	  
 }
 .size03{   /* 5 chiffres */
   font-size: 18px;
-  padding: 40% 0;		  
+/*  padding: 40% 0;*/		  
 }
 
 
@@ -384,8 +384,17 @@ p{
   display: block;
 }
 
-// Style Manu
-/*
+/* ----------------- Footer ----------------- */
+
+footer p{
+ font-size: 10px;
+ width: 100%;
+ text-align: center;
+ font-family: Oxygen;	
+}
+
+
+/* Style Manu
 h1 {
 	font-size: 4em;
 	color : aqua;

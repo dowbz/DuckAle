@@ -162,7 +162,7 @@ Matrix.prototype = {
 	},
 
 	// renvoie la matrice sous forme de texte
-	MatriceTexte : function() {
+	Affichage : function() {
 		var valeurCellule;
 		var nom;
 		var baliseP;
@@ -181,8 +181,7 @@ Matrix.prototype = {
 					baliseTd.className = "grisflat";
 					baliseP.className = "size01";
 				}
-				break;
-
+break;
 			case 2:
 			case 4:
 			case 8:
@@ -265,30 +264,10 @@ function NouvelleGrille() {
 	matrice.PopCase();
 	matrice.PopCase();
 
-	matrice.MatriceTexte();
+	matrice.Affichage();
 	document.getElementById("resultat").innerHTML = matrice.Score();
 }
 
-function Pop() {
-
-	if (matrice.PopCase() == false)
-		alert("Matrice pleine");
-	else
-		document.getElementById("matrice").innerHTML = matrice.MatriceTexte();
-
-}
-
-function Merge() {
-
-	matrice.MergeGravite();
-	document.getElementById("matriceMerger").innerHTML = matrice.MatriceTexte();
-}
-
-function Tour() {
-
-	matrice.Rotation();
-	document.getElementById("matrice").innerHTML = matrice.MatriceTexte();
-}
 
 function MouvementBas() {
 	//document.getElementById("matrice").innerHTML = matrice.MatriceTexte();
@@ -346,7 +325,7 @@ function PopEtAffichage() {
 		alert("Matrice pleine. Vous avez perdu :( ... \nVotre score est de : " + matrice.Score());
 		NouvelleGrille();
 	} else {
-		matrice.MatriceTexte();
+		matrice.Affichage();
 		document.getElementById("resultat").innerHTML = matrice.Score();
 	}
 }
