@@ -393,64 +393,41 @@ footer p{
  font-family: Oxygen;	
 }
 
+/* -------------- Animation nouvelle cellule  --------- */
 
-/* Style Manu
-h1 {
-	font-size: 4em;
-	color : aqua;
-	
+@-webkit-keyframes popCell {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-moz-keyframes popCell {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-o-keyframes popCell {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes popCell {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
 }
 
-p{
-	font-size: 1em;
-	
+.animationNewCell{
+	background: #d9f15e; /* Old browsers */
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2Q5ZjE1ZSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNhN2RkMGYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-linear-gradient(top,  #d9f15e 0%, #a7dd0f 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d9f15e), color-stop(100%,#a7dd0f)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #d9f15e 0%,#a7dd0f 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #d9f15e 0%,#a7dd0f 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #d9f15e 0%,#a7dd0f 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  #d9f15e 0%,#a7dd0f 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d9f15e', endColorstr='#a7dd0f',GradientType=0 ); /* IE6-8 */	
+  
+ -webkit-animation: popCell 1s; /* Safari 4+ */
+  -moz-animation:    popCell 1s; /* Fx 5+ */
+  -o-animation:      popCell 1s; /* Opera 12+ */
+  animation:         popCell 1s; /* IE 10+, Fx 29+ */
 }
 
 
-body {
-
-	background-image: url("Images/fond-site.jpg");
-    background-size: 100%;
-    
-    
-}
-img {
-
-	width: 40px;
-	height: inherit;
-}
-
-
-#matrice {
-	border: thin outset black;
-	border-radius: 10px;
-	 box-shadow: 6px 6px 0px black;
-}
-
-#matrice tr th {
-	border: thin solid white;
-	font-size: 140%;
-	width: 50px;
-	height: 50px;
-	border-radius: 10px;
-	//background-color: #00FFFF;
-}
-
-.boutton tr th {
-	font-family: 'LearningCurve', Arial, serif;
-	border: thin solid #6495ed;
-	color : blue;
-}
-{
-	
-	
-	font-size: 2em;
-}
-
-.scoreNombre{
-	
-	font-weight: bold;
-	font-size: 130%;
-	font-style: italic;
-}
-//*/
