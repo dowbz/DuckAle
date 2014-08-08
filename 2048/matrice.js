@@ -156,9 +156,12 @@ Matrix.prototype = {
 
 		for (var i = 0; i < this.matrice.length; i++)
 			copieLocal.push(this.matrice[i]);
+			
+			var caseSup = this._CaseSuperieur2048();
 
-		if (this.MergeGravite() == true && this._CaseSuperieur2048() == false) {
-			alert("vous avez gagné.\n Votre score est de " + this.Score());
+		if ( this.MergeGravite() == true && caseSup == false) {
+
+			affichageText("GAGNE");
 		}
 
 		// pas de changement de la matrice = > pas de pop
@@ -166,7 +169,7 @@ Matrix.prototype = {
 			return true;
 		}
 
-		return this.PopCase();
+		return (this.PopCase() == false ? "PERDU" : "CONTINUE");
 
 	},
 
@@ -340,6 +343,14 @@ function NouvelleGrille() {
 	matriceVide.Affichage();
 	maMatrice.Affichage();
 	document.getElementById("resultat").innerHTML = maMatrice.Score();
+
+	document.getElementById("Message").className = "Cache";
+	document.getElementById("Continue").className = "Cache";
+	
+	document.getElementById("fg").className = "Affiche";
+	document.getElementById("hb").className = "Affiche";
+	document.getElementById("fd").className = "Affiche";
+
 }
 
 function MouvementBas() {
@@ -347,10 +358,11 @@ function MouvementBas() {
 
 	var retour = maMatrice.Mouvement();
 
-matriceVide.Affichage();
 	maMatrice.Affichage();
 
 	affichageText(retour);
+	
+	
 }
 
 function MouvementHaut() {
@@ -363,10 +375,11 @@ function MouvementHaut() {
 
 	maMatrice.Rotation();
 	maMatrice.Rotation();
-matriceVide.Affichage();
+
 	maMatrice.Affichage();
 
 	affichageText(retour);
+	
 }
 
 function MouvementGauche() {
@@ -379,7 +392,7 @@ function MouvementGauche() {
 	maMatrice.Rotation();
 	maMatrice.Rotation();
 	maMatrice.Rotation();
-matriceVide.Affichage();
+
 	maMatrice.Affichage();
 
 	affichageText(retour);
@@ -395,18 +408,44 @@ function MouvementDroite() {
 	var retour = maMatrice.Mouvement();
 
 	maMatrice.Rotation();
-matriceVide.Affichage();
+	matriceVide.Affichage();
 	maMatrice.Affichage();
 
 	affichageText(retour);
 }
 
-function affichageText(retour) {
+function affichageText(action) {
 
-	if (retour == false)
-		alert("Vous avez perdu... Votre score est de " + maMatrice.Score());
-	else
-		document.getElementById("resultat").innerHTML = maMatrice.Score();
+	document.getElementById("resultat").innerHTML = maMatrice.Score();
+
+	if (action == "PERDU") {
+		document.getElementById("Continue").className = "Cache";
+		document.getElementById("Message").innerHTML = "Vous avez perdu... <br>Vortre score est de " + maMatrice.Score();
+
+	}
+	if (action == "GAGNE") {
+		document.getElementById("Continue").className = "Affiche";
+		document.getElementById("Message").innerHTML = "Vous avez gagné!! <br>Vortre score est de " + maMatrice.Score();
+	}
+	if (action == "GAGNE" || action == "PERDU") {
+
+		document.getElementById("Message").className = "Affiche";
+		document.getElementById("fg").className = "Cache";
+		document.getElementById("hb").className = "Cache";
+		document.getElementById("fd").className = "Cache";
+
+	}
+
+}
+
+function Continue() {
+
+	document.getElementById("Message").className = "Cache";
+	document.getElementById("Continue").className = "Cache";
+	document.getElementById("fg").className = "Affiche";
+	document.getElementById("hb").className = "Affiche";
+	document.getElementById("fd").className = "Affiche";
+
 }
 
 function touchePressee(event) {
@@ -427,25 +466,25 @@ function GrilleDebug() {
 
 	maMatrice = new Matrix();
 
-	maMatrice.AffecterValeur(0, 0, 0);
-	maMatrice.AffecterValeur(0, 1, 2);
-	maMatrice.AffecterValeur(0, 2, 4);
-	maMatrice.AffecterValeur(0, 3, 8);
+	maMatrice.AffecterValeur(0, 0, 2);
+	maMatrice.AffecterValeur(0, 1, 4);
+	maMatrice.AffecterValeur(0, 2, 2);
+	maMatrice.AffecterValeur(0, 3, 4);
 
-	maMatrice.AffecterValeur(1, 0, 16);
-	maMatrice.AffecterValeur(1, 1, 32);
-	maMatrice.AffecterValeur(1, 2, 64);
-	maMatrice.AffecterValeur(1, 3, 128);
+	maMatrice.AffecterValeur(1, 0, 32);
+	maMatrice.AffecterValeur(1, 1, 64);
+	maMatrice.AffecterValeur(1, 2, 32);
+	maMatrice.AffecterValeur(1, 3, 64);
 
-	maMatrice.AffecterValeur(2, 0, 256);
-	maMatrice.AffecterValeur(2, 1, 512);
+	maMatrice.AffecterValeur(2, 0, 1024);
+	maMatrice.AffecterValeur(2, 1, 0);
 	maMatrice.AffecterValeur(2, 2, 1024);
-	maMatrice.AffecterValeur(2, 3, 2048);
+	maMatrice.AffecterValeur(2, 3, 16);
 
-	maMatrice.AffecterValeur(3, 0, 4096);
-	maMatrice.AffecterValeur(3, 1, 2);
-	maMatrice.AffecterValeur(3, 2, 0);
-	maMatrice.AffecterValeur(3, 3, 2);
+	maMatrice.AffecterValeur(3, 0, 64);
+	maMatrice.AffecterValeur(3, 1, 32);
+	maMatrice.AffecterValeur(3, 2, 64);
+	maMatrice.AffecterValeur(3, 3, 32);
 
 	maMatrice.Affichage();
 

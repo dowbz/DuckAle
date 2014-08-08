@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<meta name="viewport" content="widtd=device-widtd" />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="description" content="" />
+		<meta name="autdor" content="Manu" />
+
+		<title>2048 by Duck Ale</title>
+
+		<link rel="stylesheet" type="text/css" href="2048.css">
+		<!--<link href='http://fonts.googleapis.com/css?family=Days+One|Aldrich|Happy+Monkey' rel='stylesheet' type='text/css'>-->
+		<link href='http://fonts.googleapis.com/css?family=Oxygen:400,700' rel='stylesheet' type='text/css'>
+
+		<script type="text/javascript" src="matrice.js"></script>
+		<!-- jQuery library <script type="text/javascript" src="lib/js/jquery-1.6.2.min.js"></script>
+		<!--<script type="text/javascript" src="lib/js/jquery-1.6.2.min.js"></script>-->
+
+	</head>
+
+	<body onkeypress="touchePressee(event);">
+		<div id="full">
+			<div id="header">
+				<div id="menu">
+					<a href=""><img src="img/menu.png" widtd="40" height="50" alt="" /></a>
+				</div>
+				<span id="score">Score</span>
+				<div id="affichage">
+					<div id="cadre_resultat">
+						<p id="resultat">
+							2048
+						</p>
+					</div>
+					<button id="reload" onclick='NouvelleGrille();'>
+						Relancer la partie
+					</button>
+				</div>
+			</div>
+
+			<table cellpadding="0" cellspacing="0" id="grid">
+				<tr>
+					<td class=""><p id="case0" class="" ></P></td><!-- case 1 -->
+					<td class=""><p id="case1" class="" ></p></td><!-- case 2 -->
+					<td class=""><p id="case2" class="" ></p></td><!-- case 3 -->
+					<td class=""><p id="case3" class="" ></p></td><!-- case 4 -->
+				</tr>
+				<tr>
+					<td class=""><p id="case4" class="" ></p></td><!-- case 5 -->
+					<td class=""><p id="case5" class="" ></p></td><!-- case 6 -->
+					<td class=""><p id="case6" class="" ></p></td><!-- case 7 -->
+					<td class=""><p id="case7" class="" ></p></td><!-- case 8 -->
+				</tr>
+				<tr>
+					<td class=""><p id="case8" class="" ></p></td><!-- case 9 -->
+					<td class=""><p id="case9" class="" ></p></td><!-- case 10 -->
+					<td class=""><p id="case10" class="" ></p></td><!-- case 11 -->
+					<td class=""><p id="case11" class="" ></p></td><!-- case 12 -->
+				</tr>
+				<tr>
+					<td class=""><p id="case12" class="" ></p></td><!-- case 13 -->
+					<td class=""><p id="case13" class="" ></p></td><!-- case 14 -->
+					<td class=""><p id="case14" class="" ></p></td><!-- case 15 -->
+					<td class=""><p id="case15" class="" ></p></td><!-- case 16 -->
+				</tr>
+			</table>
+
+			<div id="boutons">
+
+				
+
+					<div id="fg" class="Affiche">
+						<button onclick='MouvementGauche();'></button>
+					</div>
+					<div id="hb" class="Affiche">
+						<button id="fh" onclick='MouvementHaut();'></button>
+						
+						<button id="fb" onclick='MouvementBas();'></button>
+					</div>
+					
+					<div id="Message" class="Cache"></div>
+					
+					<button id="Continue" class="Cache" onclick='Continue();'>
+						Continez la partie
+					</button>
+					
+					<div id="fd" class="Affiche">
+						<button onclick='MouvementDroite();'></button>
+					</div>
+				
+
+			</div>
+
+
+			<!-- lance le remplissage de la premiere grille -->
+			<script>
+				// NouvelleGrille();
+				GrilleDebug();
+			</script>
+
+			<footer>
+				<p>
+					&#xA9 Copyright  by Duck Ale
+				</p>
+			</footer>
+
+		</div>
+	</body>
+</html>
