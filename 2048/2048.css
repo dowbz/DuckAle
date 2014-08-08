@@ -378,6 +378,8 @@ p {
 	height: 52px;
 	position: absolute;
 	top: 32px;
+	left: -10px;
+		
 }
 #fg button {
 	background: url("img/fleche-gauche.png") 0 0 no-repeat;
@@ -390,7 +392,7 @@ p {
 	width: 52px;
 	height: 52px;
 	position: absolute;
-	left: 96px;
+	left: 110px;
 	top: 32px;
 }
 #fd button {
@@ -405,6 +407,7 @@ p {
 	margin-bottom: 3px;
 	width: 52px;
 	height: 52px;
+
 }
 #fh:hover {
 	background: url("img/fleche-haut_hover.png") 0 0 no-repeat;
