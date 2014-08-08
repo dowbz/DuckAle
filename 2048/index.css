@@ -128,6 +128,7 @@ p{
   color: #fff;
   cursor: pointer;
   border: none;
+  text-shadow: 0 1px 1px #0F0F0F;
   background: #ffb789; /* Old browsers */
   /* IE9 SVG, needs conditional override of 'filter' to 'none' */
   background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmYjc4OSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZjZmMjEiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
@@ -192,14 +193,17 @@ p{
 
 .size01{   /* 3 chiffres */
   font-size: 26px;
+  text-shadow: 0px 2px 4px #aaa;
 /*  padding: 34% 0;*/	  
 }
 .size02{   /* 4 chiffres */ 
   font-size: 22px;
+  text-shadow: 0px 2px 4px #aaa;
 /*  padding: 37% 0;*/	  
 }
 .size03{   /* 5 chiffres */
-  font-size: 18px;
+  font-size: 20px;
+  text-shadow: 0px 2px 4px #aaa;
 /*  padding: 40% 0;*/		  
 }
 
@@ -259,16 +263,16 @@ p{
 }
 
 .rouge{
-  background: #ff6700; /* Old browsers */
+  background: #FF7F50; /* Old browsers */
   /* IE9 SVG, needs conditional override of 'filter' to 'none' */
   background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmNjcwMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlMTRjMDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-  background: -moz-linear-gradient(top,  #ff6700 0%, #e14c00 100%); /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff6700), color-stop(100%,#e14c00)); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top,  #ff6700 0%,#e14c00 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top,  #ff6700 0%,#e14c00 100%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(top,  #ff6700 0%,#e14c00 100%); /* IE10+ */
-  background: linear-gradient(to bottom,  #ff6700 0%,#e14c00 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff6700', endColorstr='#e14c00',GradientType=0 ); /* IE6-8 */	  
+  background: -moz-linear-gradient(top,  #FF7F50 0%, #e14c00 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FF7F50), color-stop(100%,#e14c00)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #FF7F50 0%,#e14c00 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #FF7F50 0%,#e14c00 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #FF7F50 0%,#e14c00 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  #FF7F50 0%,#e14c00 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FF6347', endColorstr='#e14c00',GradientType=0 ); /* IE6-8 */	  
 }
 
 .gris{
@@ -396,20 +400,20 @@ footer p{
 /* -------------- Animation nouvelle cellule  --------- */
 
 @-webkit-keyframes popCell {
-  0%   { opacity: 0; }
-  100% { opacity: 1; }
+    0%   {  transform: scale(0); }
+  100% {  transform: scale(1);}
 }
 @-moz-keyframes popCell {
-  0%   { opacity: 0; }
-  100% { opacity: 1; }
+    0%   {  transform: scale(0); }
+  100% {  transform: scale(1);}
 }
 @-o-keyframes popCell {
-  0%   { opacity: 0; }
-  100% { opacity: 1; }
+   0%   {  transform: scale(0); }
+  100% {  transform: scale(1);}
 }
 @keyframes popCell {
-  0%   { opacity: 0; }
-  100% { opacity: 1; }
+  0%   {  transform: scale(0); }
+  100% {  transform: scale(1);}
 }
 
 .animationNewCell{
@@ -424,10 +428,10 @@ footer p{
   background: linear-gradient(to bottom,  #d9f15e 0%,#a7dd0f 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d9f15e', endColorstr='#a7dd0f',GradientType=0 ); /* IE6-8 */	
   
- -webkit-animation: popCell 1s; /* Safari 4+ */
-  -moz-animation:    popCell 1s; /* Fx 5+ */
-  -o-animation:      popCell 1s; /* Opera 12+ */
-  animation:         popCell 1s; /* IE 10+, Fx 29+ */
+ -webkit-animation: popCell 0.5s; /* Safari 4+ */
+  -moz-animation:    popCell 0.5s; /* Fx 5+ */
+  -o-animation:      popCell 0.5s; /* Opera 12+ */
+  animation:         popCell 0.5s; /* IE 10+, Fx 29+ */
 }
 
 
