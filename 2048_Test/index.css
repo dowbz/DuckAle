@@ -1,21 +1,18 @@
 h1 {
 	font-size: 4em;
-	color : aqua;
-	
+	color: aqua;
+	position: relative;
+	margin: auto;
 }
 
-p{
+p {
 	font-size: 1em;
-	
 }
-
 
 body {
 
 	background-image: url("Images/fond-site.jpg");
-    background-size: 100%;
-    
-    
+	background-size: 100%;
 }
 img {
 
@@ -23,11 +20,10 @@ img {
 	height: inherit;
 }
 
-
 #matrice {
 	border: thin outset black;
 	border-radius: 10px;
-	 box-shadow: 6px 6px 0px black;
+	box-shadow: 6px 6px 0px black;
 }
 
 #matrice tr th {
@@ -42,18 +38,32 @@ img {
 .boutton tr th {
 	font-family: 'LearningCurve', Arial, serif;
 	border: thin solid #6495ed;
-	color : blue;
+	color: blue;
 }
 
-#score{
-	
-	
+#score {
+
 	font-size: 1.5em;
 }
 
-#resultat{
-	
+#resultat {
+
 	font-weight: bold;
 	font-size: 130%;
 	font-style: italic;
 }
+
+nav {
+	display: inline-block;
+	/*width: 150px;*/
+	border: 1px solid black;
+	vertical-align: top;
+	
+}
+
+section {
+	border: 1px solid blue;
+	display: inline-block;
+	vertical-align: top;
+}
+

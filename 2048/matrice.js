@@ -156,10 +156,10 @@ Matrix.prototype = {
 
 		for (var i = 0; i < this.matrice.length; i++)
 			copieLocal.push(this.matrice[i]);
-			
-			var caseSup = this._CaseSuperieur2048();
 
-		if ( this.MergeGravite() == true && caseSup == false) {
+		var caseSup = this._CaseSuperieur2048();
+
+		if (this.MergeGravite() == true && caseSup == false) {
 
 			affichageText("GAGNE");
 		}
@@ -346,7 +346,7 @@ function NouvelleGrille() {
 
 	document.getElementById("Message").className = "Cache";
 	document.getElementById("Continue").className = "Cache";
-	
+
 	document.getElementById("fg").className = "Affiche";
 	document.getElementById("hb").className = "Affiche";
 	document.getElementById("fd").className = "Affiche";
@@ -361,8 +361,7 @@ function MouvementBas() {
 	maMatrice.Affichage();
 
 	affichageText(retour);
-	
-	
+
 }
 
 function MouvementHaut() {
@@ -379,7 +378,7 @@ function MouvementHaut() {
 	maMatrice.Affichage();
 
 	affichageText(retour);
-	
+
 }
 
 function MouvementGauche() {
@@ -425,7 +424,7 @@ function affichageText(action) {
 	}
 	if (action == "GAGNE") {
 		document.getElementById("Continue").className = "Affiche";
-		document.getElementById("Message").innerHTML = "Vous avez gagné!! <br>Vortre score est de " + maMatrice.Score();
+		document.getElementById("Message").innerHTML = "Vous avez gagné!! ";
 	}
 	if (action == "GAGNE" || action == "PERDU") {
 
@@ -489,3 +488,4 @@ function GrilleDebug() {
 	maMatrice.Affichage();
 
 }
+

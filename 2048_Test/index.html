@@ -14,10 +14,13 @@
 		<meta name="viewport" content="width=device-width; initial-scale=1.0">
 
 		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
-		<script type="text/javascript" src="matrice.js"></script>
-		<!-- <link rel="javascript" type="text/javascript" href="Manipu.js"/> -->
 
+		<script type="text/javascript" src="matrice.js"></script>
 		<link rel="stylesheet" type="text/css" href="index.css">
+		<!--[if lte IE 7]>
+        <link rel="stylesheet" href="style_ie.css" />
+        <![endif]-->
+
 	</head>
 
 	<body onkeypress="touchePressee(event);">
@@ -25,45 +28,41 @@
 			<header>
 				<h1>2048</h1>
 			</header>
-
-			<table id="matrice">
-				<tr>
-					<th id="case0" ></th><!-- case 1 -->
-					<th  id="case1" ></th><!-- case 1 -->
-					<th   id="case2" ></th><!-- case 1 -->
-					<th   id="case3" ></th><!-- case 1 -->
-				</tr>
-				<tr>
-					<th   id="case4" ></th><!-- case 1 -->
-					<th   id="case5" ></th><!-- case 1 -->
-					<th   id="case6" ></th><!-- case 1 -->
-					<th   id="case7" ></th><!-- case 1 -->
-				</tr>
-				<tr>
-					<th   id="case8" ></th><!-- case 1 -->
-					<th   id="case9" ></th><!-- case 1 -->
-					<th   id="case10" ></th><!-- case 1 -->
-					<th   id="case11" ></th><!-- case 1 -->
-				</tr>
-				<tr>
-					<th   id="case12" ></th><!-- case 1 -->
-					<th  id="case13" ></th><!-- case 1 -->
-					<th   id="case14" ></th><!-- case 1 -->
-					<th   id="case15" ></th><!-- case 1 -->
-				</tr>
-
-			</table>
-
-			<div>
-				<p id="score"> votre score est de : <span id="resultat">0</span>  </p>
-
-			</div>
-			
 			
 
-			<div>
+			<section>
+				<table id="matrice">
+					<tr>
+						<th id="case0" ></th><!-- case 1 -->
+						<th  id="case1" ></th><!-- case 1 -->
+						<th   id="case2" ></th><!-- case 1 -->
+						<th   id="case3" ></th><!-- case 1 -->
+					</tr>
+					<tr>
+						<th   id="case4" ></th><!-- case 1 -->
+						<th   id="case5" ></th><!-- case 1 -->
+						<th   id="case6" ></th><!-- case 1 -->
+						<th   id="case7" ></th><!-- case 1 -->
+					</tr>
+					<tr>
+						<th   id="case8" ></th><!-- case 1 -->
+						<th   id="case9" ></th><!-- case 1 -->
+						<th   id="case10" ></th><!-- case 1 -->
+						<th   id="case11" ></th><!-- case 1 -->
+					</tr>
+					<tr>
+						<th   id="case12" ></th><!-- case 1 -->
+						<th  id="case13" ></th><!-- case 1 -->
+						<th   id="case14" ></th><!-- case 1 -->
+						<th   id="case15" ></th><!-- case 1 -->
+					</tr>
+
+				</table>
+
+			</section>
+			
+						<nav>
 				<table>
-					
 
 					<tr>
 						<th ></th>
@@ -84,25 +83,31 @@
 					</tr>
 					<tr></tr>
 					<tr>
-						<th colspan="3">
-							<img src="Icones/new.png" alt="new" onclick='NouvelleGrille();'></th>
+						<th colspan="3"><img src="Icones/new.png" alt="new" onclick='NouvelleGrille();'></th>
 						</th>
 					</tr>
 
 				</table>
-			</div>
+			</nav>
+
+				<div>
+					<p id="score">
+						votre score est de : <span id="resultat">0</span>
+					</p>
+
+				</div>
 			
-		
+
 			<!-- lance le remplissage de la premiere grille -->
 			<script>
-			NouvelleGrille();
+				NouvelleGrille();
 			</script>
 
 			<footer>
 				<p>
 					&#xA9 Copyright  by Duck Ale
 				</p>
-				
+
 			</footer>
 		</div>
 	</body>

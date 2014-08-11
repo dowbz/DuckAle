@@ -5,6 +5,8 @@
 var TAILLE_MATRICE = 4;
 var entier = ( typeof Int32Array != 'undefined');
 
+
+
 function Matrix() {
 	// on cree un vecteur avec toutes les valeurs Ã  0
 	var m = Array.prototype.concat.apply([], arguments);
