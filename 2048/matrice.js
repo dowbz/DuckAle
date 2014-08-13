@@ -344,6 +344,7 @@ function NouvelleGrille() {
 	maMatrice.Affichage();
 	document.getElementById("resultat").innerHTML = maMatrice.Score();
 
+
 	document.getElementById("Message").className = "Cache";
 	document.getElementById("Continue").className = "Cache";
 
@@ -416,6 +417,8 @@ function MouvementDroite() {
 function affichageText(action) {
 
 	document.getElementById("resultat").innerHTML = maMatrice.Score();
+	
+	document.getElementById("MeilleurScore").innerHTML = maMatrice.Score();
 
 	if (action == "PERDU") {
 		document.getElementById("Continue").className = "Cache";
