@@ -42,7 +42,7 @@ p {
 	font-family: Oxygen, Helvetica, Arial, sans-serif;
 	width: 100%;
 	max-width: 288px;
-	height: 500px;
+	/*height: 500px;*/
 	margin: 20px auto;
 	padding: 4px;
 	border-spacing: 0;
