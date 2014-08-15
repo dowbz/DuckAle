@@ -4,7 +4,7 @@
 
 body, html {
 	width: 100% !important;
-	height: 100%;
+	height: auto;
 	background-color: #fff;
 	margin: 0 auto;
 	padding: 0;
@@ -42,7 +42,7 @@ p {
 	font-family: Oxygen, Helvetica, Arial, sans-serif;
 	width: 100%;
 	max-width: 288px;
-	height: 490px;
+	height: 500px;
 	margin: 20px auto;
 	padding: 4px;
 	border-spacing: 0;
