@@ -427,7 +427,7 @@ function affichageText(action) {
 	}
 	if (action == "GAGNE") {
 		document.getElementById("Continue").className = "Affiche";
-		document.getElementById("Message").innerHTML = "Vous avez gagné!! ";
+		document.getElementById("Message").innerHTML = "Vous avez gagné ! ";
 	}
 	if (action == "GAGNE" || action == "PERDU") {
 
