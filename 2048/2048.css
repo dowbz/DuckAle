@@ -152,6 +152,7 @@ p {
 }
 
 #Continue {
+	float: left;
 	font-size: 16px;
 	letter-spacing: 0.05em;
 	width: 160px;
